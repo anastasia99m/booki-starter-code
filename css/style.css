@@ -58,6 +58,54 @@ a {
     color: var(--main-bg-color)
 }
 
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 61.09px;
+    height: 19px;
+
+}
+
+.entet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    
+}
+
+ul{
+    list-style-type: none;    
+    display: flex;
+    
+}
+
+.button1{
+    color: #0065FC;
+    
+}
+
+.button1:after{
+    content: "";
+    position: absolute;
+    background-color: #0065FC;
+    height: 2px;
+    width: 0;
+    display: flex;
+    top: 0;
+    
+}
+
+.button1:hover:after{
+    width: 113px;
+}
+
+.button2{
+    margin-left: 30px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
