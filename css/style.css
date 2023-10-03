@@ -181,18 +181,26 @@ input{
     flex-wrap: wrap;
 }
 .try{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    align-content:space-between;
-    height: 50px;
+    display: inline-flex;
+    height: 40px;
     padding: 4px 19px;
     align-items: center;
     border-radius: 25px;
     border: 2px solid var(--grey-tint-2, #D9D9D9);
-    box-sizing: content-box;
-    
+    margin-right: 15px;
 }
+.try:focus{
+    background-color: #0065FC;
+}
+.filtres{  /* Title/Filter */
+font-family: Raleway;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-right: 15px;
+}
+
 .filtres-icon{
     width: 22px;
     height: 22px;
