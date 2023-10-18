@@ -47,11 +47,16 @@ a {
 
 .logo{
     display: flex;
-    justify-content: flex-start;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 0;
+}
+.logo img{
     width: 61.09px;
     height: 19px;
+
 }
 
 .entet{
@@ -395,7 +400,7 @@ justify-content: space-between;
 
 .activites-cards{
     display: flex;
-    height: 439px;
+   
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -432,7 +437,6 @@ justify-content: space-between;
     justify-content: center;
     gap: 10px;
     align-self: stretch;
-    margin: 0;
 }
 
 /****** Footer ***********/
@@ -505,14 +509,40 @@ footer div p {
         flex-direction: column;
         gap: 20px;
     }
-    .activites-cards {
+    .activites .card img {
         height: 200px;
-        
+    }
+    .activites .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; 
+        height: auto;
+
+    }
+    .activites .card-title{
+        height: 30px;
     }
 }
 
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .logo img{
+        display: flex;
+        justify-content: center;
+    }
+   
+    .entet{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        }
+
+    ul{
+        justify-content: space-between;
+        align-items: stretch;
+        
+    }
 }
