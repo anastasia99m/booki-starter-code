@@ -102,7 +102,6 @@ ul{
     align-items: flex-start;
     align-self: stretch;
     padding: auto;
-    height: 53px;
     gap: 8px;
 }
 .info-group{
@@ -120,7 +119,8 @@ h2{
 }
 .description{
     margin: 0;
-    display: inline-flex;
+    display: flex;
+
 }
 
 .search-bar{
@@ -528,6 +528,9 @@ footer div p {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .logo{
+        padding: 30px;
+    }
     .logo img{
         display: flex;
         justify-content: center;
@@ -540,9 +543,45 @@ footer div p {
         justify-content: center;
         }
 
-    ul{
-        justify-content: space-between;
-        align-items: stretch;
+
+    .button1:after{
+        height: 2px;
+        flex: 1 0 0; 
         
     }
+   li {
+        width: 187.5px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+        padding: 0;
+    }
+    a.button2{
+        margin: 0;
+    }
+    .filter-bar div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+      
+        align-content: stretch;
+    }
+    .recherche{
+        visibility: hidden;
+    }
+    
+    .info-group{
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+    .main-container{
+        padding: 0;
+    }
+    .try{
+        width: 162px;
+    }
+    
 }
