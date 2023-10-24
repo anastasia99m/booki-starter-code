@@ -128,8 +128,8 @@ h2{
     width: 377px;
     height: 49px;
     align-items: center;
+    gap: 24px;
 
-       
 }
 
 ::placeholder {
@@ -142,7 +142,6 @@ input{
     height: 3.4em ;
     text-align: center;
     font-weight: 700;
-
     border: 0;
 }
 
@@ -582,6 +581,9 @@ footer div p {
     }
     .try{
         width: 162px;
+    }
+    form input{
+        width: 100%;
     }
     
 }
